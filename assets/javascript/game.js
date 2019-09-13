@@ -1,6 +1,6 @@
 //variables
 var wins = 0;
-var losses = 0;
+var losses =   0;
 var goal = 0;
 var currentTotal = 0;
 var gemValues =[];
@@ -79,8 +79,8 @@ function newGame(){
 function updateScreen(){
     document.getElementById('goalnumber').textContent=goal;
     document.getElementById('totalscore').textContent=currentTotal;
-    document.getElementById('wins').textContent='Wins '+wins;
-    document.getElementById('losses').textContent='Losses '+losses;
+    document.getElementById('wins').textContent='Wins: '+wins;
+    document.getElementById('losses').textContent='Losses: '+losses;
 
 
 }
