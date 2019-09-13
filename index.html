@@ -16,7 +16,7 @@
     <p class="lead">dhfskudhku.</p>
    
   </div>
-  <script src="assets/javascript/game.js"></script>
+  
 <body background="gem.jpg">
 
   <div class="row">
@@ -38,10 +38,10 @@
           </div>
     </div>
     <div class="class col-md-6">
-      <img id="blue" src="assets/images/blue.jpg">
-      <img id="purple" src="assets/images/purple.2.jpg">
-      <img id="gem" src="assets/images/gem.3.jpg">
-      <img id="white" src="assets/images/white.jpg">
+      <img  onclick="gemClick(1)" id="blue" src="assets/images/blue.jpg">
+      <img onclick="gemClick(2)" id="purple" src="assets/images/purple.2.jpg">
+      <img onclick="gemClick(3)" id="gem" src="assets/images/gem.3.jpg">
+      <img onclick="gemClick(4)" id="white" src="assets/images/white.jpg">
     </div>
     
     <br>
@@ -53,7 +53,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Goal</h5>
-              <p class="card-text"> number</p>
+              <p id="goalnumber"class="card-text"> number</p>
             </div>
           </div>
         </div>
@@ -61,8 +61,8 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Score</h5>
-              <p class="card-text">Wins: </p>
-              <p class="card-text">Losses: </p>
+              <p id='wins'class="card-text">Wins: </p>
+              <p id='losses'class="card-text">Losses: </p>
               
             </div>
           </div>
@@ -71,7 +71,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Total Score</h5>
-                <p class="card-text">Ts: </p>
+                <p id='totalscore'class="card-text">Ts: </p>
                 
                 
               </div>
@@ -82,5 +82,7 @@
   </div>
 </div>
     <div class="class col-md-12"></div>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
